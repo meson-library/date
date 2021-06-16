@@ -1,0 +1,4 @@
+[wrap-git]
+directory = date
+url = https://github.com/meson-library/date.git
+revision = v3.0.1
