@@ -12,11 +12,10 @@ date_dep = declare_dependency(
 install_subdir('include/date',
                 install_dir : 'include')
 
+install_subdir('docs',
+ 			   strip_directory : true,
+			   install_dir     : 'share/docs/date')
+
 install_data(['LICENSE.txt'],
                rename      : ['LICENSE'],
                install_dir :  'share/licenses/date')
-
-if get_option('install_docs')
-    install_subdir('doc/api', install_dir : 'share/docs/date')
-    install_data(['doc/manual.pdf'], install_dir :  'share/docs/date')
-endif
